@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container start" style="display: block;">
+		<img src="door.png" class="w-25 dver">
+		<img src="door2.png" class="w-25">
+		<img src="door3.png" class="w-25">
+	</div>
+	<div style="height: 800px; background: url(bg.jpg); display: none; background-size: 100%, 100%" class="fon">
+			<h1 style="font-size: 50px;color: white;">
+			 помоги гари найти его палочку, плашь ,метлу! надо заработать 3 очка
+			</h1>
+			<h1 style="font-size: 50px; color: white;">0</h1>
+		<button class="bg-success home">выйти из игры</button>
+		<img src="metla.png" style="height: 100px; position: absolute; margin-left: 950px; margin-top: 100px;"
+		class="metla">
+		<img src="mantiya.png" style="height: 100px; position: absolute; margin-left: 500px; margin-top: 500px"
+			class="mantiya">
+		<img src="palochka.png" style="height: 100px; position: absolute; margin-left: 350px; margin-top: 400px" class="palochka">
+		<img src="gun.png" style="height: 100px; position: absolute; margin-left: 500px" class="gun">
+		<img src="ring.png" style="height: 100px; position: absolute; margin-left: 300px; margin-top: 250px" class="ring">
+	</div>
+	<script type="text/javascript">
+		document.querySelector(".dver").onclick = function(){
+			alert("добро пожаловать в хогвартс")
+			document.querySelector(".fon").style.display = "block";
+			document.querySelector(".start").style.display = "none"
+
+			document.querySelector(".metla").onclick = function(){
+				document.querySelector(".metla").style.display = "none"
+			}
+			document.querySelector(".mantiya").onclick = function(){
+				document.querySelector(".mantiya").style.display = "none"
+			}
+			document.querySelector(".palochka").onclick = function(){
+				document.querySelector(".palochka").style.display = "none"
+			}
+			document.querySelector(".gun").onclick = function(){
+				document.querySelector(".gun").style.display = "none"
+			}
+			document.querySelector(".ring").onclick = function(){
+				document.querySelector(".ring").style.display = "none"
+			}
+			document.querySelector(".home").onclick = function(){
+				document.querySelector(".start").style.display = "block"
+				document.querySelector(".fon").style.display = "none"
+			}
+		} 
+	</script>
+</body>
+</html>
